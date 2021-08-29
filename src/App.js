@@ -1,24 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Home from './components/Home/Home'
+import About from './components/About/About';
+import Footer from './components/Footer/Footer'
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+
+<Router>
+
+<section className='myGrid'>
+  <div className='header'>
+  <Navbar>
+  <Container>
+    <Navbar.Brand ><Link to="/home">Home</Link></Navbar.Brand>
+    <Navbar.Brand ><Link to="/about">About</Link></Navbar.Brand>
+      <Navbar.Text>
+        Signed in as: <a href="#login">Mark Otto</a>
+      </Navbar.Text>
+
+  </Container>
+</Navbar>
+
+  </div>
+  <div className='body'>
+       <Switch>
+         <Route path="/home">
+           <Home />
+         </Route>
+         <Route path="/about">
+           <About />
+         </Route>
+       </Switch>
+  </div>
+  <div className='footer'>
+    <Footer />
+  </div>
+</section>
+</Router>
   );
 }
 
