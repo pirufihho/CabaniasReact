@@ -3,6 +3,7 @@ import './App.css';
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Home from './components/Home/Home'
+import Cabanias from './components/Cabanias/Cabanias'
 import About from './components/About/About';
 import Footer from './components/Footer/Footer'
 import React from "react";
@@ -23,7 +24,8 @@ function App() {
   <div className='header'>
   <Navbar>
   <Container>
-    <Navbar.Brand ><Link to="/home">Home</Link></Navbar.Brand>
+    <Navbar.Brand ><Link to="/">Home</Link></Navbar.Brand>
+    <Navbar.Brand ><Link to="/cabanias">Cabanias</Link></Navbar.Brand>
     <Navbar.Brand ><Link to="/about">About</Link></Navbar.Brand>
       <Navbar.Text>
         Signed in as: <a href="#login">Mark Otto</a>
@@ -35,8 +37,11 @@ function App() {
   </div>
   <div className='body'>
        <Switch>
-         <Route path="/home">
+         <Route exact path="/">
            <Home />
+         </Route>
+         <Route path="/cabanias">
+           <Cabanias />
          </Route>
          <Route path="/about">
            <About />
