@@ -15,7 +15,6 @@ import {
         CabaniasClient.getCabanias().then(response => {
           if(response){
             this.setState({cabanias: response})
-            console.log(response)   
           }
           
         }, (error)=> {

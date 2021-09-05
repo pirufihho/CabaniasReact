@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Home from './components/Home/Home'
 import Cabanias from './components/Cabanias/Cabanias'
+import Cabania from './components/Cabania/Cabania'
 import About from './components/About/About';
 import Footer from './components/Footer/Footer'
 import React from "react";
@@ -45,6 +46,9 @@ function App() {
          </Route>
          <Route path="/about">
            <About />
+         </Route>
+         <Route path="/cabania/:id">
+           <Cabania id=":id"/>
          </Route>
        </Switch>
   </div>

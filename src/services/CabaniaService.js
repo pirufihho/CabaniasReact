@@ -55,7 +55,18 @@ const CabaniasClient = {
             }
             
         })
-    }
+    },
+
+    getCabaniaById : (id) => {
+      return new Promise((resolve, reject)=> {
+          if(CabaniasList && id) {
+              resolve(CabaniasList.find(x => x.id == id))
+          } else {
+              reject("cabania no encontrada");
+          }
+          
+      })
+  }
 }
 
 export default CabaniasClient;
