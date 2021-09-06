@@ -12,10 +12,10 @@ import queryString from 'query-string';
       }
       componentDidMount() {
         //cortar string para obtener id
-        console.log(this.props.location.pathname)
-        const id = queryString.parse();
+        var stringPath = '/cabania/'
+        var id = this.props.location.pathname.slice(stringPath.length);
 
-        CabaniasClient.getCabaniaById(1).then(response => {
+        CabaniasClient.getCabaniaById(id).then(response => {
           if(response){
               console.log(response)
             this.setState({cabania: response})

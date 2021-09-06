@@ -1,23 +1,14 @@
-/* .myGrid {
-  width: 1366px;
-  height: 768px;
-  display: grid;
-  grid: 
-      "header" auto
-"body" 1fr
-"footer" auto
-      / 1fr;
-  grid-gap: 16px;
+.containernew{
+  justify-content: left !important;
+  padding-left: 31px !important;
 }
-.header {
-  grid-area: header;
+
+.containertext{
+  padding-left: 63%;
 }
-.body {
-  grid-area: body;
+
+.body{
+  background-color:burlywood;
+  min-height: 700px;
+  color:black
 }
-.footer {
-  grid-area: footer;
-}
-.myGrid > div {
-  //background: gray;
-} */

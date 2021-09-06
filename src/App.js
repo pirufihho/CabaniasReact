@@ -23,14 +23,14 @@ function App() {
 
 <section className='myGrid'>
   <div className='header'>
-  <Navbar>
-  <Container>
+  <Navbar bg="light" expand="lg">
+  <Container className="containernew">
     <Navbar.Brand ><Link to="/">Home</Link></Navbar.Brand>
     <Navbar.Brand ><Link to="/cabanias">Cabanias</Link></Navbar.Brand>
     <Navbar.Brand ><Link to="/about">About</Link></Navbar.Brand>
-      <Navbar.Text>
-        Signed in as: <a href="#login">Mark Otto</a>
-      </Navbar.Text>
+    <Navbar.Text className="containertext">
+      Signed in as: <a href="#login">Mark Otto</a>
+    </Navbar.Text>
 
   </Container>
 </Navbar>
@@ -48,7 +48,7 @@ function App() {
            <About />
          </Route>
          <Route path="/cabania/:id">
-           <Cabania id=":id"/>
+           <Cabania />
          </Route>
        </Switch>
   </div>
