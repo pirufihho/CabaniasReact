@@ -27,7 +27,7 @@ function App() {
   <Container className="containernew">
     <Navbar.Brand ><Link to="/">Home</Link></Navbar.Brand>
     <Navbar.Brand ><Link to="/cabanias">Cabanias</Link></Navbar.Brand>
-    <Navbar.Brand ><Link to="/about">About</Link></Navbar.Brand>
+    <Navbar.Brand ><Link to="/about">Contacto</Link></Navbar.Brand>
     <Navbar.Text className="containertext">
       Signed in as: <a href="#login">Mark Otto</a>
     </Navbar.Text>
