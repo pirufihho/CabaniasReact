@@ -12,3 +12,11 @@
   min-height: 700px;
   color:black
 }
+
+.form-control{
+  width: 50% !important;
+}
+
+.form-control-style{
+  margin-left: 10% !important;
+}
